@@ -1,0 +1,348 @@
+/* -----------Basic Setup----------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Noto Serif', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* -----------REUSABLE COMPONENTS----------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 2%;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h1,
+h2 {
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-weight: 150;
+    color: rgb(219, 219, 219);
+}
+
+h3 {
+    color: black;
+    margin-top: 15px;
+}
+
+h3:after {
+    display: block;
+    height: 2px;
+    background-color: black;
+    content: " ";
+    width: 100px;
+    margin-top: 25px;
+}
+
+h3 {
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/*-----------PARAGRAPHS--------- */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box {
+    padding: 20px;
+}
+
+.box p {
+    line-height: 30px;
+    word-spacing: 1px;
+}
+
+/* -----------HEADER----------- */
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/site_banner.png);
+    background-size: cover;
+    background-position: 10% 0%;
+    background-attachment: fixed;
+}
+
+.main-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../img/AdamBatstone1-min.jpg);
+    background-size: cover;
+    background-position: 0% 41%;
+    background-attachment: fixed;
+    height: 100vh;
+    min-height: 100%;
+}
+
+/* -----------Navigation----------- */
+
+.flex-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.main-nav {
+    list-style: none;
+    text-align: center;
+    line-height: 220%;
+}
+
+.main-title {
+    margin-left: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited  {
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 3px solid black;
+}
+
+.main-title {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*-------------STICKY NAV---------*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-title {
+    color: black;
+    font-size: 100%;
+    padding-top: 5px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited  {
+    padding: 12px 0px;
+    color: black;
+}
+
+.sticky .flex-nav {
+    padding: 10px;
+}
+
+.sticky .mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: black;
+}
+/*------------MOBILE NAV---------------*/
+
+.mobile-nav-icon {
+    cursor: pointer;
+    display: none;
+    margin-right: 50px;
+    margin-top: 3px;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/*-----------INDEX CONTENT------------*/
+
+.main-intro {
+    display: flex;
+    width: 100%;
+    background-color: rgba(31, 29, 29);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+.social-media li {
+    display: inline;
+    list-style: none;
+}
+
+.social-media img {
+    padding-left: 20px;
+    padding-right: 40px;
+    height: 30px;
+    transition: transform .25s ease;
+}
+
+.social-icons:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.index-image {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*--------------VIDEO CONTAINER--------*/
+
+.video-container {
+    display: flex;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.video-container iframe {
+    padding: 15px;
+    width: 100%;
+}
+
+
+/*----------------FOOTER---------------*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 275px;
+    background-color: #555;
+    color: white;
+}
+
+.flex-footer p {
+    padding: 10px;
+    font-size: 75%;
+
+}
+
+/*----------------TEACHING---------------*/
+
+.lesson-form {
+    display: flex;
+    margin-top: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #555;
+    color: ivory;
+}
+
+.lesson-form img {
+    padding-top: 60px;
+}
+
+/*-----------------BIO------------------*/
+
+.bio-image {
+    width: 100%;
+    margin-top: 100px;
+}
+
+/*----------------ARRANGEMENTS-----------*/
+
+.arrangements {
+    text-align: center;
+    border: 2px solid black;
+}
+
+.arrangements h3:after {
+    display: none;
+}
+
+.arrangements p {
+    padding: 10px;
+}
+
+.arrangement-img {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.arrangements form {
+    padding: 10px;
+}
+
+/*---------------CONTACT-----------------*/
+
+.contact-form {
+    border-radius: 5px;
+    background-color: rgb(226, 224, 224);
+    text-align: center;
+}
+
+.contact-form input[type=text] {
+    width: 50%;
+}
+
+.contact-form input[type=text-area] {
+    width: 100%;
+}
+
+.contact-form input[type=text-area] {
+    display: block;
+    width: 80%;
+    height: 100px;
+}
+
+.contact-form input[type=submit] {
+    padding: 7px;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+.submit-btn {
+    text-align: center;
+}
