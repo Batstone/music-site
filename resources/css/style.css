@@ -123,7 +123,6 @@ header {
     
 }
 
-
 .main-nav li a:link,
 .main-nav li a:visited  {
     padding: 8px 0px;
@@ -192,7 +191,6 @@ header {
     color: #fff;
 }
 
-
 /*-----------INDEX CONTENT------------*/
 
 .main-intro {
@@ -250,13 +248,12 @@ header {
     width: 100%;
 }
 
-
 /*----------------FOOTER---------------*/
 
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 275px;
+    margin-top: 550px;
     background-color: #555;
     color: white;
 }
@@ -317,32 +314,6 @@ footer {
 
 /*---------------CONTACT-----------------*/
 
-.contact-form {
-    border-radius: 5px;
-    background-color: rgb(226, 224, 224);
-    text-align: center;
-}
-
-.contact-form input[type=text] {
-    width: 50%;
-}
-
-.contact-form input[type=text-area] {
-    width: 100%;
-}
-
-.contact-form input[type=text-area] {
-    display: block;
-    width: 80%;
-    height: 100px;
-}
-
-.contact-form input[type=submit] {
-    padding: 7px;
-    border-radius: 50px;
-    margin: 15px;
-}
-
-.submit-btn {
-    text-align: center;
+.email {
+     font-weight: bold;
 }
