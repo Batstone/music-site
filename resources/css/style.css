@@ -266,6 +266,10 @@ footer {
 
 /*----------------TEACHING---------------*/
 
+.teaching-description p {
+    margin-bottom: 25px;
+}
+
 .lesson-form {
     display: flex;
     margin-top: 40px;
