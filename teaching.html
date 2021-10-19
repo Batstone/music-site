@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -23,7 +22,6 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
 </head>
 
 <body>
@@ -92,34 +90,31 @@
 
     <div class="row teaching-info">
         <div class="col span-1-of-2 box">
-            <p class>My rate is $40.00 USD per hour lesson. Purchasing four or eight lessons upfront will result in a
-                discount. Once you have purchased a lesson, I
-                will reach out by email to schedule a time at your convenience.
-            </p>
+            <p class>My rate is $60.00 USD per hour lesson.</p>
 
             <div class="lesson-form">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <table>
                         <tr>
-                            <td><input type="hidden" name="on0" value="Guitar Lessons">Guitar Lessons</td>
+                            <td><input type="hidden" name="on0" value="Number of Lessons">Number of Lessons</td>
                         </tr>
                         <tr>
                             <td><select name="os0">
-                                    <option value="Single Lesson">Single Lesson $40.00 USD</option>
-                                    <option value="Four Lessons">Four Lessons $140.00 USD</option>
-                                    <option value="Eight Lessons">Eight Lessons $280.00 USD</option>
+                                    <option value="Single Lesson">Single Lesson $60.00 USD</option>
+                                    <option value="Four Lessons">Four Lessons $240.00 USD</option>
+                                    <option value="Eight Lessons">Eight Lessons $480.00 USD</option>
                                 </select> </td>
                         </tr>
                     </table>
-                    <input type="hidden" name="currency_code" value="USD">
                     <input type="hidden" name="encrypted"
-                        value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
+                        value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
                         name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
                         height="1">
                 </form>
+
             </div>
         </div>
         <img src="resources/img/IMG_1173_BW-min.jpg" alt="" class="col span-1-of-2 teaching-photo box">
